@@ -1,4 +1,4 @@
-package com.softtek.persistencia;
+package com.softtek.persistencia.ejercicio7;
 
 public class ProductoException extends Exception {
     public ProductoException(String mensaje){

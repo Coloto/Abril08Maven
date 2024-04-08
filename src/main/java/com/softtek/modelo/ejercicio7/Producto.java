@@ -1,6 +1,6 @@
-package com.softtek.modelo;
+package com.softtek.modelo.ejercicio7;
 
-import com.softtek.persistencia.ProductoException;
+import com.softtek.persistencia.ejercicio7.ProductoException;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

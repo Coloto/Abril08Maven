@@ -1,9 +1,9 @@
 package com.softtek.presentacion;
 
-import com.softtek.modelo.Calculadora;
-import com.softtek.modelo.Producto;
-import com.softtek.persistencia.DivisionEntreCeroException;
-import com.softtek.persistencia.ProductoException;
+import com.softtek.modelo.ejercicio8.Calculadora;
+import com.softtek.modelo.ejercicio7.Producto;
+import com.softtek.persistencia.ejercicio8.DivisionEntreCeroException;
+import com.softtek.persistencia.ejercicio7.ProductoException;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

@@ -1,13 +1,10 @@
-package com.softtek.modelo;
+package com.softtek.modelo.ejercicio8;
 
-import com.softtek.persistencia.DivisionEntreCeroException;
-import com.softtek.persistencia.ProductoException;
+import com.softtek.persistencia.ejercicio8.DivisionEntreCeroException;
 import lombok.NoArgsConstructor;
 
-import java.util.InputMismatchException;
-
 @NoArgsConstructor
-public class Calculadora implements Operaciones{
+public class Calculadora implements Operaciones {
 
     @Override
     public double sumar(double x, double y) {

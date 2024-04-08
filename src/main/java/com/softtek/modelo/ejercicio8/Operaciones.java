@@ -1,6 +1,6 @@
-package com.softtek.modelo;
+package com.softtek.modelo.ejercicio8;
 
-import com.softtek.persistencia.DivisionEntreCeroException;
+import com.softtek.persistencia.ejercicio8.DivisionEntreCeroException;
 
 public interface Operaciones {
     double sumar(double x, double y);
