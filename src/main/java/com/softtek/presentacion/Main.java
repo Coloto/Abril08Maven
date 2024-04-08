@@ -5,6 +5,11 @@ import com.softtek.persistencia.ProductoException;
 
 public class Main {
     public static void main(String[] args) {
+        //Ejercicio7
+        //ejercicio7();
+    }
+
+    public static void ejercicio7(){
         try {
             Producto producto1 = new Producto("1", "Silla", 15.99, "Ikea", "Silla de madera");
             Producto producto2 = new Producto();
@@ -15,6 +20,9 @@ public class Main {
             System.out.println("ERROR: " + e.getMessage());
             e.printStackTrace();
         }
+    }
+
+    public static void ejercicio8(){
 
     }
 }
