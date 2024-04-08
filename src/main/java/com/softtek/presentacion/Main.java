@@ -1,12 +1,20 @@
 package com.softtek.presentacion;
 
+import com.softtek.modelo.Calculadora;
 import com.softtek.modelo.Producto;
+import com.softtek.persistencia.DivisionEntreCeroException;
 import com.softtek.persistencia.ProductoException;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Main {
+    static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
         //Ejercicio7
         //ejercicio7();
+
+        ejercicio8();
     }
 
     public static void ejercicio7(){
@@ -23,6 +31,40 @@ public class Main {
     }
 
     public static void ejercicio8(){
+        double n1, n2;
+        try{
+            Calculadora calc = new Calculadora();
+            System.out.print("Operacion que desea realizar\n1.Sumar\n2.Restar\n3.Multiplicar\n4.Dividir\n> ");
+            String opcion = input.nextLine();
 
+            switch (opcion){
+                case "1":
+                    System.out.print("Numero 1: ");
+                    n1 = input.nextDouble();
+                    System.out.print("Numero 2: ");
+                    n2 = input.nextDouble();
+                    System.out.println(calc.sumar(n1, n2));
+                case "2":
+                    System.out.print("Numero 1: ");
+                    n1 = input.nextDouble();
+                    System.out.print("Numero 2: ");
+                    n2 = input.nextDouble();
+                    System.out.println(calc.restar(n1, n2));
+                case "3":
+                    System.out.print("Numero 1: ");
+                    n1 = input.nextDouble();
+                    System.out.print("Numero 2: ");
+                    n2 = input.nextDouble();
+                    System.out.println(calc.multiplicar(n1, n2));
+                case "4":
+                    System.out.print("Numero 1: ");
+                    n1 = input.nextDouble();
+                    System.out.print("Numero 2: ");
+                    n2 = input.nextDouble();
+                    System.out.println(calc.dividir(n1, n2));
+            }
+        } catch (InputMismatchException | DivisionEntreCeroException e){
+            System.out.println("Error: "+ e.getMessage());
+        }
     }
 }
